@@ -2,7 +2,6 @@
 
 Gemini File Chatbot is a Streamlit-based application that allows users to chat with a conversational AI model trained on documents. The chatbot extracts information from uploaded files and answers user questions based on the provided context.
 
-https://duc-multipdfchat.streamlit.app/
 
 
 ## Features
