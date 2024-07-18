@@ -65,7 +65,7 @@ Follow these instructions to set up and run this project on your local machine.
 3. **Set up Tesseract:**
    **On Windows:**
    - Download Tesseract here: https://github.com/UB-Mannheim/tesseract/wiki
-   - Add Path to the system environment: `a`
+   - Add Path to the system environment: `/path/to/Tesseract-OCR`
 
 4. **Set up Google API Key:**
 
@@ -79,9 +79,9 @@ Follow these instructions to set up and run this project on your local machine.
    ```bash
    streamlit run main.py
    ```
-6. **Upload PDFs:**
+6. **Upload Files:**
 
-   - Use the sidebar to upload PDF files.
+   - Use the sidebar to upload files.
    - Click on "Submit & Process" to extract text and generate embeddings.
 7. **Chat Interface:**
 
