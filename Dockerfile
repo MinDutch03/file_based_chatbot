@@ -53,4 +53,4 @@ EXPOSE 8501
 
 
 # Run the application.
-CMD streamlit run app.py
+CMD streamlit run app1.py
