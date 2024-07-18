@@ -1,14 +1,14 @@
-# Gemini PDF Chatbot
+# Gemini File Chatbot 
+https://duc-multi-filechat.streamlit.app/
 
-Gemini PDF Chatbot is a Streamlit-based application that allows users to chat with a conversational AI model trained on PDF documents. The chatbot extracts information from uploaded PDF files and answers user questions based on the provided context.
+Gemini File Chatbot is a Streamlit-based application that allows users to chat with a conversational AI model trained on documents. The chatbot extracts information from uploaded files and answers user questions based on the provided context.
 
-https://duc-multipdfchat.streamlit.app/
 
 
 ## Features
 
-- **PDF Upload:** Users can upload multiple PDF files.
-- **Text Extraction:** Extracts text from uploaded PDF files.
+- **PDF, Text, Image Upload:** Users can upload multiple files.
+- **Text Extraction:** Extracts text from uploaded files.
 - **Conversational AI:** Uses the Gemini conversational AI model to answer user questions.
 - **Chat Interface:** Provides a chat interface to interact with the chatbot.
 
@@ -23,7 +23,7 @@ If you have docker installed, you can run the application using the following co
   ```
 
 ```bash
-docker compose up --build
+docker-compose up --build
 ```
 
 Your application will be available at [http://localhost:8501](http://localhost:8501).
@@ -60,24 +60,30 @@ Follow these instructions to set up and run this project on your local machine.
 
    ```bash
    pip install -r requirements.txt
+   pip install pytesseract pillow
    ```
-3. **Set up Google API Key:**
+3. **Set up Tesseract:**
+   **On Windows:**
+   - Download Tesseract here: https://github.com/UB-Mannheim/tesseract/wiki
+   - Add Path to the system environment: `/path/to/Tesseract-OCR`
+
+4. **Set up Google API Key:**
 
    - Obtain a Google API key and set it in the `.env` file.
 
    ```bash
    GOOGLE_API_KEY=your_api_key_here
    ```
-4. **Run the Application:**
+5. **Run the Application:**
 
    ```bash
    streamlit run main.py
    ```
-5. **Upload PDFs:**
+6. **Upload Files:**
 
-   - Use the sidebar to upload PDF files.
+   - Use the sidebar to upload files.
    - Click on "Submit & Process" to extract text and generate embeddings.
-6. **Chat Interface:**
+7. **Chat Interface:**
 
    - Chat with the AI in the main interface.
 
@@ -95,6 +101,8 @@ Follow these instructions to set up and run this project on your local machine.
 - Streamlit
 - google.generativeai
 - dotenv
+- tesseract
+
 
 ## Acknowledgments
 
