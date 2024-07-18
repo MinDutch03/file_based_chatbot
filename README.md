@@ -60,24 +60,30 @@ Follow these instructions to set up and run this project on your local machine.
 
    ```bash
    pip install -r requirements.txt
+   pip install pytesseract pillow
    ```
-3. **Set up Google API Key:**
+3. **Set up Tesseract:**
+   **On Windows:**
+   - Download Tesseract here: https://github.com/UB-Mannheim/tesseract/wiki
+   - Add Path to the system environment: `a`
+
+4. **Set up Google API Key:**
 
    - Obtain a Google API key and set it in the `.env` file.
 
    ```bash
    GOOGLE_API_KEY=your_api_key_here
    ```
-4. **Run the Application:**
+5. **Run the Application:**
 
    ```bash
    streamlit run main.py
    ```
-5. **Upload PDFs:**
+6. **Upload PDFs:**
 
    - Use the sidebar to upload PDF files.
    - Click on "Submit & Process" to extract text and generate embeddings.
-6. **Chat Interface:**
+7. **Chat Interface:**
 
    - Chat with the AI in the main interface.
 
@@ -95,6 +101,8 @@ Follow these instructions to set up and run this project on your local machine.
 - Streamlit
 - google.generativeai
 - dotenv
+- tesseract
+
 
 ## Acknowledgments
 
