@@ -8,5 +8,4 @@ faiss-cpu
 langchain_google_genai
 langchain-community
 pytesseract
-transformers
-sentence-transformers
+
