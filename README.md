@@ -54,7 +54,7 @@ Follow these instructions to set up and run this project on your local machine.
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/MinDutch03/pdf_chatbot.git
+   git clone https://github.com/MinDutch03/file_based_chatbot.git
    ```
 2. **Install Dependencies:**
 
