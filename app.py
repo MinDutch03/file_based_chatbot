@@ -36,8 +36,16 @@ def get_pdf_text(pdf_docs):
 def get_text_file_content(text_files):
     text = ""
     for text_file in text_files:
-        text += text_file.read().decode('utf-8')
+        try:
+            text += text_file.read().decode('utf-8')
+        except UnicodeDecodeError:
+            try:
+                text += text_file.read().decode('latin-1')
+            except UnicodeDecodeError:
+                st.error(f"Failed to decode {text_file.name}")
+                continue
     return text
+
 
 # Function to read all image files and return extracted text
 def get_image_text(image_files):
