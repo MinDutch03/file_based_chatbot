@@ -15,9 +15,13 @@ from PIL import Image
 # Set Tesseract path for Windows
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-load_dotenv()
-os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# load_dotenv()
+# os.getenv("GOOGLE_API_KEY")
+# genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+# Load the Google API key from Streamlit secrets
+google_api_key = st.secrets["google"]["api_key"]
+genai.configure(api_key=google_api_key)
 
 # Function to read all pdf files and return text
 def get_pdf_text(pdf_docs):
