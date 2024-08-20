@@ -20,7 +20,7 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 # genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Load the Google API key from Streamlit secrets
-google_api_key = st.secrets["google"]["GOOGLE_API_KEY"]
+google_api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=google_api_key)
 
 # Function to read all pdf files and return text
